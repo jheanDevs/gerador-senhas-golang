@@ -10,7 +10,6 @@ func main() {
 	var lenSenha int
 
 	//GERAR SENHA PELO INPUT DO USUARIO
-
 	fmt.Print("Digite o tamanho da senha: ")
 	fmt.Scanln(&lenSenha)
 	fmt.Println("\n")
@@ -53,6 +52,3 @@ func gerenatePassword(length int) string {
 
 	return string(password)
 }
-
-// gerar senha aleatória
-// https://pkg.go.dev/github.com/sethvargo/go-password/password
