@@ -69,19 +69,19 @@ func main() {
 	//GERAR SENHA PELO INPUT DO USUARIO
 	fmt.Print("Digite o tamanho da senha: ")
 	fmt.Scanln(&lenSenha)
-	fmt.Println("\n")
+	fmt.Println()
 
 	useUpper := getUserChoice("Incluir letras maiúsculas?")
 	useLower := getUserChoice("Incluir letras minúsculas?")
 	useNumbers := getUserChoice("Incluir números?")
 	useSpecial := getUserChoice("Incluir caracteres especiais?")
-	fmt.Println("\n")
+	fmt.Println()
 
 	//GERANDO A SENHA COM BASE NAS PREFERENCIAS DO USUARIO
 	password := generatePassword(lenSenha, useUpper, useLower, useNumbers, useSpecial)
 
 	//EXIBIR SENHA GERADA
 	fmt.Println("============================")
-	fmt.Println("Senha gerada: ", password)
+	fmt.Println("Senha Gerada: ", password)
 	fmt.Println("============================")
 }
