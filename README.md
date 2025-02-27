@@ -1,46 +1,60 @@
-# gerador-senhas-golang
-Gerador de Senhas em Golang
-
 # Gerador de Senhas em Golang
 
-Este é um simples gerador de senhas aleatórias escrito em Golang. O programa permite ao usuário especificar o tamanho da senha e gera uma senha contendo letras maiúsculas, minúsculas, números e caracteres especiais.
+## 📌 Sobre o projeto
+Este é um simples gerador de senhas aleatórias escrito em **Golang**. O programa permite ao usuário especificar o tamanho da senha e escolher quais tipos de caracteres incluir na senha.
 
-## Como funciona
-
+## 🚀 Como funciona
 1. O usuário informa o tamanho da senha desejada.
-2. O programa gera uma senha aleatória garantindo que pelo menos um número e uma letra maiúscula estejam presentes.
+2. O programa solicita quais tipos de caracteres incluir:
+   - ✅ Letras maiúsculas
+   - ✅ Letras minúsculas
+   - ✅ Números
+   - ✅ Caracteres especiais
 3. A senha gerada é exibida no terminal.
 
-## Tecnologias utilizadas
-- Linguagem: Go (Golang)
-- Pacotes padrão: `fmt`, `math/rand`
+## 🛠 Tecnologias utilizadas
+- **Linguagem:** Go (Golang)
+- **Pacotes padrão:** fmt, math/rand, time, strings
 
-## Como executar o programa
-
-1. Certifique-se de ter o Go instalado em sua máquina.
-2. Salve o código em um arquivo chamado `main.go`.
-3. No terminal, navegue até o diretório onde o arquivo está salvo e execute o seguinte comando:
+## ▶ Como executar o programa
+1. Certifique-se de ter o **Go** instalado em sua máquina.
+2. Clone o repositório:
+   ```sh
+   git clone https://github.com/jheanDevs/gerador-senhas-golang.git
+   ```
+3. Acesse a pasta do projeto:
+   ```sh
+   cd gerador-senhas-golang
+   ```
+4. Compile e execute o programa:
    ```sh
    go run main.go
    ```
-4. Insira o tamanho da senha desejada e pressione `Enter`.
-5. A senha gerada será exibida no terminal.
+5. Insira o tamanho da senha desejada e selecione os tipos de caracteres (S/N).
+6. A senha gerada será exibida no terminal.
 
-## Exemplo de uso
+## 📝 Exemplo de uso
 ```
 Digite o tamanho da senha: 10
+Incluir letras maiúsculas? (S/N): S
+Incluir letras minúsculas? (S/N): S
+Incluir números? (S/N): N
+Incluir caracteres especiais? (S/N): S
 
 ============================
-Senha gerada: A9f@bC*3!
+Senha gerada: Kx!PaW@yVq
 ============================
 ```
 
-## Melhorias futuras
-- Adicionar a opção de personalizar quais tipos de caracteres incluir na senha.
-- Melhorar a aleatoriedade usando `crypto/rand` em vez de `math/rand`.
+## 🔧 Melhorias futuras
+- Melhorar a aleatoriedade usando **crypto/rand** em vez de **math/rand**.
 - Criar uma interface gráfica para o gerador.
+- Implementar a possibilidade de salvar senhas geradas em um arquivo.
 
-## Referências
+## 📚 Referências
 - [Pacote rand](https://pkg.go.dev/math/rand)
-- [Gerador de senhas seguro](https://pkg.go.dev/github.com/sethvargo/go-password/password)
+- [Gerador de senhas seguro](https://pkg.go.dev/crypto/rand)
+
+## 📜 Licença
+Este projeto é de código aberto e está licenciado sob a licença **MIT**.
 
